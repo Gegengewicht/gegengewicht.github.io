@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="/">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <span>© {{ "now" | date: "%Y" }} {{ site.title }}</span>
+    </footer>
+
+    <script defer src="/assets/js/sidenotes.js"></script>
+  </body>
+</html>
